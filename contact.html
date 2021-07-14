@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BZega Resume</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Brandon Zega's Resume</h1>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <a href="../May2021-Project/index.html">Home</a>
+            <a href="../May2021-Project/about.html">About</a>
+            <a href="../May2021-Project/contact.html">Contact</a>
+        </div>
+    </nav>
+    <main class="main-contact">
+        <form method="POST" action="contact.html" class="contact-submit" name="contact-submit" onsubmit="return validation(this)">
+            <h2>Contact Mr. Zega</h2>
+            <label for="name">Your Name: </label>
+            <input type="text" id="name" name="user_name">
+            <label for="mail">E-mail: </label>
+            <input type="email" id="mail" name="user_email">
+            <label for="feedback">Message: </label>
+            <textarea id="feedback" rows="10" cols="30" maxlength="500" name="user_feedback"></textarea>
+            <button type="submit" class="sub-button" value="Validate">Submit</button>
+        </form>    
+    </main>
+    <footer> 
+        <p> Brandon Zega &copy; 2021 </p>
+        <p>2037 Currys Fork Dr</p>
+        <p>La Grange, KY 40031</p>
+        <p>Facebook image</p>
+        <p>Twitter image</p>
+        <p>Twitch image</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
