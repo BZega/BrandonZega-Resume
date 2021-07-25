@@ -2,16 +2,28 @@
 Contact Us Form
 **************/
 form {
-    max-width: 300px;
+    max-width: 95%;
     margin: 10px auto;
     padding: 10px 20px;
-    background: red;
+    /*background: white;*/
     border-radius: 8px;
 }
   
 h2 {
     margin: 0 0 30px 0;
     text-align: center;
+}
+a, a:visited {
+	color: #000000;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus, a:active {
+	color: #FF0077;
+	outline: 0;
 }
 
 /* input fields css */
