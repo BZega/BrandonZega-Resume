@@ -7,56 +7,94 @@
     <title>BZega Resume</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Brandon Zega's Resume</h1>
-            <img src="img/BZega.jpg">
-        </div>
+    <header>             
+            <!-- Navigation bar -->
+            <div class="navbar">
+                <a href="#home" class="current">Brandon Zega's Resume</a>
+                
+                <div id="mainNav">         
+                    <a href="#about">About</a>
+                    <a href="#workexp">Work Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>                    
+                </div>
+
+                <a href="javascript:void(0);" class="hamburger" onclick="navFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
     </header>
-    <!-- Navigation bar -->
-    <nav id="navbar">
-        <ul class="main-nav">
-            <li class="current"><a href="../May2021-Project/index.html">Home</a></li>
-            <li><a href="../May2021-Project/about.html">About</a></li>
-            <li><a href="../May2021-Project/contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <main>
+        <!-- About -->
+        <section id="about">
+            <div>
+                <h3 class=aboutinfo>About</h3>
+                    <p>Aliquam semper mattis molestie. Quisque eleifend malesuada diam, eu convallis nulla dictum id. Curabitur faucibus sed lacus ac commodo. Phasellus ex nibh, iaculis ac risus vel, cursus consectetur felis. Suspendisse mauris nisi, hendrerit eu ipsum nec, semper dapibus urna. Curabitur eget dui laoreet, efficitur mauris nec, ultricies erat. Aliquam mattis ante mi, placerat interdum mauris placerat quis. Curabitur a nulla scelerisque, sollicitudin massa scelerisque, dignissim urna. Donec pulvinar pharetra dolor nec accumsan. Donec vitae placerat justo, ut lacinia nibh. Fusce imperdiet vestibulum quam nec convallis.</p>
+                <h4 class="title">Information</h4>
+                    <h5 class="info">Name</h5>
+                        <p>Brandon Zega</p>
+                    <h5 class="info">E-Mail</h5>
+                        <p>brandon_zega@yahoo.com</p>
+                    <h5 class="info">Location</h5>
+                        <p>2037 Currys Fork Dr</p>
+                        <p>La Grange, KY 40031</p>
+                    <h5 class="info">Phone</h5>
+                        <p>(859)312-2679</p>
+            </div>
+            <div>
+                <h3 class="title">Computer Skills</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Java</p>
+                    <p>Selenium</p>
+            </div>
+        </section>
+        
+
         <!-- Work Experience -->
-        <h1>Work Experience</h1>
-        <p class="title">1st job</p>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac tristique tortor, a pharetra lorem. Sed lorem risus, cursus eget commodo at, luctus sed tortor. Nullam sagittis at turpis at tincidunt. In molestie tortor et enim congue vestibulum. Integer nec dui in ligula tristique consequat. Duis et sapien vel nisl auctor iaculis. Sed condimentum rhoncus ligula non aliquam. Donec sit amet tortor vehicula, viverra est id, euismod lacus. Sed eleifend tincidunt odio vitae mollis. Ut pulvinar eleifend quam et rhoncus. Cras fringilla sed enim consectetur finibus. Quisque dignissim, tortor non rhoncus aliquet, massa odio accumsan ipsum, ac accumsan nulla odio in enim. Mauris hendrerit orci sit amet quam congue, in condimentum enim scelerisque. Nulla eget eros tempor, ornare urna blandit, ullamcorper nibh. Suspendisse maximus est at purus laoreet consequat.</p>
-        <p class="title">2nd job</p>
-        <p class="description">Aenean at ligula efficitur, pharetra ligula eget, fermentum nibh. Proin molestie nulla augue, id porta enim accumsan sit amet. Nullam condimentum condimentum facilisis. Integer ut nisl bibendum enim feugiat ultricies. Curabitur quis faucibus ligula, eget molestie turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec accumsan suscipit erat, vel varius arcu aliquam in. Duis bibendum erat a convallis vehicula. Cras dapibus mi quis felis faucibus, et vehicula quam egestas. Suspendisse eu velit quis sapien bibendum lacinia vitae a neque. Nulla malesuada molestie euismod.</p>
+        <section id="workexp">
+            <h3>Work Experience</h3>
+                <h4 class="title">1st job</h4>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac tristique tortor, a pharetra lorem. Sed lorem risus, cursus eget commodo at, luctus sed tortor. Nullam sagittis at turpis at tincidunt. In molestie tortor et enim congue vestibulum. Integer nec dui in ligula tristique consequat. Duis et sapien vel nisl auctor iaculis. Sed condimentum rhoncus ligula non aliquam. Donec sit amet tortor vehicula, viverra est id, euismod lacus. Sed eleifend tincidunt odio vitae mollis. Ut pulvinar eleifend quam et rhoncus. Cras fringilla sed enim consectetur finibus. Quisque dignissim, tortor non rhoncus aliquet, massa odio accumsan ipsum, ac accumsan nulla odio in enim. Mauris hendrerit orci sit amet quam congue, in condimentum enim scelerisque. Nulla eget eros tempor, ornare urna blandit, ullamcorper nibh. Suspendisse maximus est at purus laoreet consequat.</p>
+                <h4 class="title">2nd job</h4>
+                    <p class="description">Aenean at ligula efficitur, pharetra ligula eget, fermentum nibh. Proin molestie nulla augue, id porta enim accumsan sit amet. Nullam condimentum condimentum facilisis. Integer ut nisl bibendum enim feugiat ultricies. Curabitur quis faucibus ligula, eget molestie turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec accumsan suscipit erat, vel varius arcu aliquam in. Duis bibendum erat a convallis vehicula. Cras dapibus mi quis felis faucibus, et vehicula quam egestas. Suspendisse eu velit quis sapien bibendum lacinia vitae a neque. Nulla malesuada molestie euismod.</p>
+        </section>
+        
         <!-- Skills -->
-        <h1>Skills</h1>
-        <p class="title">1st Skill</p>
-        <p class="description">Maecenas eget pellentesque dui. Nullam at consequat urna, non tempor nibh. Vestibulum risus mi, volutpat a magna nec, tristique ullamcorper est. Nulla pretium pellentesque interdum. Etiam non diam augue. Morbi non purus suscipit, malesuada ipsum et, sollicitudin mi. Nam imperdiet dignissim nibh et aliquet. Aliquam dapibus efficitur urna sit amet sollicitudin. Aenean eleifend metus vel viverra blandit. Vivamus accumsan luctus risus a vehicula. In facilisis neque felis, tristique lacinia ipsum posuere eget. In interdum ut ligula in vulputate. Nunc non viverra tortor. Morbi pretium metus vitae metus aliquet ultricies.</p>
-        <p class="title">2nd Skill</p>
-        <p class="description">Vestibulum facilisis dictum vehicula. Fusce pellentesque nec diam eu malesuada. Suspendisse tempor ipsum eget facilisis vehicula. Vivamus tincidunt sit amet urna id porttitor. Fusce sem arcu, pretium eu leo sed, vulputate suscipit velit. In luctus orci in lorem pharetra, eu vulputate enim luctus. Duis mollis ullamcorper ligula nec pulvinar. Sed a metus at lectus maximus mattis in in diam. Nulla condimentum lacus quis ultrices hendrerit.</p>
-         
+        <section id="skills">
+            <h3>Skills</h3>
+                <h4 class="title">1st Skill</h4>
+                    <p class="description">Maecenas eget pellentesque dui. Nullam at consequat urna, non tempor nibh. Vestibulum risus mi, volutpat a magna nec, tristique ullamcorper est. Nulla pretium pellentesque interdum. Etiam non diam augue. Morbi non purus suscipit, malesuada ipsum et, sollicitudin mi. Nam imperdiet dignissim nibh et aliquet. Aliquam dapibus efficitur urna sit amet sollicitudin. Aenean eleifend metus vel viverra blandit. Vivamus accumsan luctus risus a vehicula. In facilisis neque felis, tristique lacinia ipsum posuere eget. In interdum ut ligula in vulputate. Nunc non viverra tortor. Morbi pretium metus vitae metus aliquet ultricies.</p>
+                <h4 class="title">2nd Skill</h4>
+                    <p class="description">Vestibulum facilisis dictum vehicula. Fusce pellentesque nec diam eu malesuada. Suspendisse tempor ipsum eget facilisis vehicula. Vivamus tincidunt sit amet urna id porttitor. Fusce sem arcu, pretium eu leo sed, vulputate suscipit velit. In luctus orci in lorem pharetra, eu vulputate enim luctus. Duis mollis ullamcorper ligula nec pulvinar. Sed a metus at lectus maximus mattis in in diam. Nulla condimentum lacus quis ultrices hendrerit.</p>
+        </section> 
         <!-- contact form  -->
-        <form method="POST" action="index.html" class="contact-submit" name="contact-submit" onsubmit="return validation(this)">
-            <h2 class="contact-title">Contact Mr. Zega</h2>
-            <label for="name">Your Name: </label>
-            <input type="text" id="name" name="user_name">
-            <label for="mail">E-mail: </label>
-            <input type="email" id="mail" name="user_email">
-            <label for="feedback">Message: </label>
-            <textarea id="feedback" rows="10" cols="30" maxlength="500" name="user_feedback"></textarea>
-            <button type="submit" class="sub-button" value="Validate">Submit</button>
-        </form>   
+        <section id="contact">
+            <form method="POST" action="index.html" class="contact-submit" name="contact-submit" onsubmit="return validation(this)">
+                <h2 class="contact-title">Contact Mr. Zega</h2>
+                <label for="name">Your Name: </label>
+                <input type="text" id="name" name="user_name">
+                <label for="mail">E-mail: </label>
+                <input type="email" id="mail" name="user_email">
+                <label for="feedback">Message: </label>
+                <textarea id="feedback" rows="10" cols="30" maxlength="500" name="user_feedback"></textarea>
+                <button type="submit" class="sub-button" value="Validate">Submit</button>
+            </form>
+        </section>   
     </main>
+
     <footer> 
         <p>Brandon Zega &copy; 2021 </p>
         <p>2037 Currys Fork Dr</p>
         <p>La Grange, KY 40031</p>
-        <p>Facebook image</p>
-        <p>Twitter image</p>
-        <p>Twitch image</p>
+        <a href="https://www.facebook.com/brandon.zega"><img src="img/facebook_img.jpg" alt="Facebook"></a>
+        <a href="https://twitter.com/BZega"><img src="img/twitter_img.png" alt="Twitter"></a>
+        <a href="https://www.twitch.tv/bzega"><img src="img/twitch_img.jpg" alt="Twitch"></a>
     </footer>
 </body>
 </html>

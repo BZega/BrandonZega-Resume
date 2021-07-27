@@ -2,25 +2,103 @@ body {
     background-color: #0B0C10;
 }
 
+
 h1 {
+    color: #c5c6c7;
+    width: 75%;
+    padding-left: 15px;
+}
+
+h3 {
     color: #66fcf1;
+    width: 75%;
+    padding-left: 15px;
 }
 
 .title {
-    color: #66fcf1;
+    color: #45a29e;
+    width: 75%;
+    padding-left: 15px;
+}
+
+.info {
+    color: #c5c6c7;
+    width: 75%;
+    padding-left: 15px;
 }
 
 .description {
     color: #c5c6c7;
+    width: 75%;
+    padding-left: 15px;
 }
 
 p {
-    color: 66fcf1;
+    color: #66fcf1;
+    width: 75%;
+    padding-left: 15px; 
 }
 
 img {
     width: 150px;
+    display: fixed;
+    float: right;
+    clear: left;
+    padding: 15px;
 }
+
+img[alt~="Facebook"],
+img[alt~="Twitter"],
+img[alt~="Twitch"] {
+    color: #c5c6c7;
+}
+
+/**************
+Navigation
+**************/
+.navbar {
+    overflow: hidden;
+    background-color: #0B0C10;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.navbar #mainNav {
+    display: none;
+}
+
+.navbar a {
+    color: #66fcf1;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar a.hamburger {
+    background: #0B0C10;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar a:hover {
+    background-color: #1f2833;
+    color: #45a29e;
+}
+
+.current {
+    background-color: #0B0C10;
+    color: #66fcf1;
+}
+
+i {
+    color: #66fcf1;
+}
+
+
 
 /**************
 Contact Us Form
@@ -39,14 +117,7 @@ form {
     width: 75%;
     color: #66fcf1;
 }
-a, a:visited {
-	color: #45a29e;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
+
 a:hover, a:focus, a:active {
 	color: #45a29e;
 	outline: 0;
@@ -57,7 +128,6 @@ input[type="text"],
 input[type="email"],
 textarea {
     background: #0b0c10;
-    border: none;
     font-size: 16px;
     height: auto;
     margin: 0;

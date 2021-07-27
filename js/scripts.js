@@ -19,3 +19,12 @@ function validation(theForm){
             return true;
         }
 }
+
+function navFunction() {
+    var x = document.getElementById("mainNav");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
