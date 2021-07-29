@@ -22,7 +22,9 @@ h1, h3 {
 
 section {
     text-align: center;
-    padding: 60px 15px;
+    padding: 30px 15px;
+    margin: 15px 50px;
+    border: 1px solid black;
 }
 
 .info {
@@ -34,14 +36,12 @@ section {
 
 .description, .content {
     color: black;
-    width: 100%;
     padding: 0px 15px;
     text-align: center;
 }
 
 p {
     color: #0B0C10;
-    width: 100%;
     padding: 0px 15px;
     text-align: center; 
 }
@@ -50,6 +50,8 @@ img {
     width: 150px;
     padding: 15px;
 }
+
+
 
 img[alt~="Facebook"],
 img[alt~="Twitter"],
@@ -108,7 +110,6 @@ i {
 Contact Us Form
 **************/
 form {
-    max-width: 75%;
     margin: 10px auto;
     padding: 10px 20px;
     /*background: white;*/
@@ -118,7 +119,6 @@ form {
 .contact-title {
     margin: 0 0 30px 0;
     text-align: center;
-    width: 75%;
     color: #0B0C10;
 }
 
@@ -180,9 +180,9 @@ label {
     color: #0B0C10;
 }
 
-.social {
-    float: right;
-    clear: left;
+
+#contact {
+    margin: 15px 0px;
 }
 
 /***************
@@ -214,5 +214,21 @@ Media Queries
 }
 
 @media only screen and (min-width: 800px) {
-    
+    .aboutsec {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    .info, .title, .description, .content {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1021px) {
+    section {
+        margin: 15px 20vw;
+    }
 }

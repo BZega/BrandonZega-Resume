@@ -24,7 +24,6 @@ const mediaQuery = window.matchMedia('(max-width: 600px)')
 
 function navFunction() {
     var x = document.getElementById("mainNav");
-    //x.classList.toggle('show');
     if (mediaQuery.matches) {
         if ( x.classList.contains('show')) {
             x.classList.remove('show');
