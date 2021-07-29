@@ -9,21 +9,21 @@ body {
 
 section {
     text-align: center;
+    background-color: #0B0C10;
     padding: 30px 15px;
     margin: 15px 50px;
-    border: 1px solid black;
+    border: 2px solid #66fcf1;
 }
 
 h1, h3 {
-    color: #0B0C10;
+    color: #66fcf1;
     padding: 0px 15px;
-    width: 100%;
     font-family: "poppins-semibold", sans-serif;
     text-align: center;
 }
 
 p {
-    color: #0B0C10;
+    color: #c5c6c7;
     padding: 0px 15px;
     text-align: center; 
 }
@@ -38,23 +38,25 @@ footer p {
     color: #66fcf1;
 }
 
+#about {
+    margin: 60px 50px 15px;
+}
+
 .title {
-    color: #1f2833;
-    width: 100%;
+    color: #66fcf1;
     padding: 0px 15px;
     font-family: "poppins-semibold", sans-serif;
     text-align: center;
 }
 
 .info {
-    color: #0B0C10;
-    width: 100%;
+    color: #66fcf1;
     padding: 0px 15px;
     text-align: center;
 }
 
 .description, .content {
-    color: black;
+    color: #c5c6c7;
     padding: 0px 15px;
     text-align: center;
 }
@@ -73,6 +75,10 @@ footer p {
 .social-img {
     width: 55px;
     height: 45px;
+}
+
+.social-img:hover {
+    opacity: 0.5;
 }
 
 img[alt~="Facebook"],
@@ -142,7 +148,7 @@ form {
 .contact-title {
     margin: 0 0 30px 0;
     text-align: center;
-    color: #0B0C10;
+    color: #66fcf1;
 }
 
 a:hover, a:focus, a:active {
@@ -186,7 +192,7 @@ textarea:-webkit-autofill {
     font-style: normal;
     border-radius: 5px;
     width: 77%;
-    border: 1px solid #0B0C10;
+    border: 1px solid #66fcf1;
     border-width: 1px 1px 1px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
     margin-bottom: 10px;
@@ -200,7 +206,7 @@ textarea:-webkit-autofill {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #0B0C10;
+    color: #66fcf1;
 }
 
 #contact {
@@ -256,6 +262,7 @@ Media Queries
     #contact {
         margin: 15px 50px;
     }
+
 }
 
 @media only screen and (min-width: 1188px) {
@@ -265,5 +272,9 @@ Media Queries
 
     #contact {
         margin: 15px 20vw;
+    }
+
+    #about {
+        margin: 60px 20vw 15px;
     }
 }
