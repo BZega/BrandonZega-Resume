@@ -16,11 +16,11 @@
             <div class="navbar">
                 <a href="#home" class="current">Brandon Zega's Resume</a>
                 
-                <div id="mainNav">         
-                    <a href="#about">About</a>
-                    <a href="#workexp">Work Experience</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#contact">Contact</a>                    
+                <div id="mainNav" class="show">         
+                    <a href="#about" onclick="navFunction()">About</a>
+                    <a href="#workexp" onclick="navFunction()">Work Experience</a>
+                    <a href="#skills" onclick="navFunction()">Skills</a>
+                    <a href="#contact" onclick="navFunction()">Contact</a>                    
                 </div>
 
                 <a href="javascript:void(0);" class="hamburger" onclick="navFunction()">
@@ -33,9 +33,13 @@
         <section id="about">
             <div class="aboutWrap">
                 <div class="aboutsec">
-                    <h3 class="aboutinfo">About:</h3>
-                        <p class="description">Aliquam semper mattis molestie. Quisque eleifend malesuada diam, eu convallis nulla dictum id. Curabitur faucibus sed lacus ac commodo. Phasellus ex nibh, iaculis ac risus vel, cursus consectetur felis. Suspendisse mauris nisi, hendrerit eu ipsum nec, semper dapibus urna. Curabitur eget dui laoreet, efficitur mauris nec, ultricies erat. Aliquam mattis ante mi, placerat interdum mauris placerat quis. Curabitur a nulla scelerisque, sollicitudin massa scelerisque, dignissim urna. Donec pulvinar pharetra dolor nec accumsan. Donec vitae placerat justo, ut lacinia nibh. Fusce imperdiet vestibulum quam nec convallis.</p>
-                    <img src="img/BZega.jpg" class="pic">
+                    <div class="about-info">
+                        <h3 class="title">About:</h3>
+                            <p class="description">Aliquam semper mattis molestie. Quisque eleifend malesuada diam, eu convallis nulla dictum id. Curabitur faucibus sed lacus ac commodo. Phasellus ex nibh, iaculis ac risus vel, cursus consectetur felis. Suspendisse mauris nisi, hendrerit eu ipsum nec, semper dapibus urna. Curabitur eget dui laoreet, efficitur mauris nec, ultricies erat. Aliquam mattis ante mi, placerat interdum mauris placerat quis. Curabitur a nulla scelerisque, sollicitudin massa scelerisque, dignissim urna. Donec pulvinar pharetra dolor nec accumsan. Donec vitae placerat justo, ut lacinia nibh. Fusce imperdiet vestibulum quam nec convallis.</p>
+                    </div>
+                    <div class="prof-pic">
+                        <img src="img/BZega.jpg" class="pic">
+                    </div>
                     <div class="information">
                         <h4 id="information" class="title">Information:</h4>
                             <h5 class="info">Name:</h5>

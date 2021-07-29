@@ -20,11 +20,17 @@ function validation(theForm){
         }
 }
 
+const mediaQuery = window.matchMedia('(max-width: 600px)')
+
 function navFunction() {
     var x = document.getElementById("mainNav");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+    //x.classList.toggle('show');
+    if (mediaQuery.matches) {
+        if ( x.classList.contains('show')) {
+            x.classList.remove('show');
+        }
+        else {
+            x.classList.add('show');
+        } 
     }
-  }
+}
