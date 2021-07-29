@@ -11,10 +11,10 @@
     <script defer src="js/scripts.js"></script>
 </head>
 <body>
-    <header>             
-            <!-- Navigation bar -->
+    <header id="home">             
+            <!-- Navigation bar with a hamburger menu -->
             <div class="navbar">
-                <a href="#home" class="current">Brandon Zega's Resume</a>
+                <a href="#home" class="current" onclick="navFunction()">Brandon Zega's Resume</a>
                 
                 <div id="mainNav" class="show">         
                     <a href="#about" onclick="navFunction()">About</a>
@@ -29,7 +29,7 @@
             </div>
     </header>
     <main>
-        <!-- About -->
+        <!-- About Section -->
         <section id="about">
             <div class="aboutWrap">
                 <div class="aboutsec">
@@ -65,7 +65,7 @@
         </section>
         
 
-        <!-- Work Experience -->
+        <!-- Work Experience Section -->
         <section id="workexp">
             <h3>Work Experience:</h3>
                 <h4 class="title">1st job:</h4>
@@ -74,7 +74,7 @@
                     <p class="description">Aenean at ligula efficitur, pharetra ligula eget, fermentum nibh. Proin molestie nulla augue, id porta enim accumsan sit amet. Nullam condimentum condimentum facilisis. Integer ut nisl bibendum enim feugiat ultricies. Curabitur quis faucibus ligula, eget molestie turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec accumsan suscipit erat, vel varius arcu aliquam in. Duis bibendum erat a convallis vehicula. Cras dapibus mi quis felis faucibus, et vehicula quam egestas. Suspendisse eu velit quis sapien bibendum lacinia vitae a neque. Nulla malesuada molestie euismod.</p>
         </section>
         
-        <!-- Skills -->
+        <!-- Skills Section-->
         <section id="skills">
             <h3>Skills:</h3>
                 <h4 class="title">1st Skill:</h4>
@@ -82,7 +82,7 @@
                 <h4 class="title">2nd Skill:</h4>
                     <p class="description">Vestibulum facilisis dictum vehicula. Fusce pellentesque nec diam eu malesuada. Suspendisse tempor ipsum eget facilisis vehicula. Vivamus tincidunt sit amet urna id porttitor. Fusce sem arcu, pretium eu leo sed, vulputate suscipit velit. In luctus orci in lorem pharetra, eu vulputate enim luctus. Duis mollis ullamcorper ligula nec pulvinar. Sed a metus at lectus maximus mattis in in diam. Nulla condimentum lacus quis ultrices hendrerit.</p>
         </section> 
-        <!-- contact form  -->
+        <!-- Contact Form Section -->
         <section id="contact">
             <form method="POST" action="index.html" class="contact-submit" name="contact-submit" onsubmit="return validation(this)">
                 <h2 class="contact-title">Contact Mr. Zega</h2>
@@ -97,13 +97,16 @@
         </section>   
     </main>
 
+    <!-- Footer with social links -->
     <footer> 
         <p>Brandon Zega &copy; 2021 </p>
         <p>2037 Currys Fork Dr</p>
         <p>La Grange, KY 40031</p>
-        <a href="https://www.facebook.com/brandon.zega"><img src="img/facebook_img.jpg" class="social" alt="Facebook"></a>
-        <a href="https://twitter.com/BZega"><img src="img/twitter_img.png" class="social" alt="Twitter"></a>
-        <a href="https://www.twitch.tv/bzega"><img src="img/twitch_img.jpg" class="social" alt="Twitch"></a>
+        <div class="social">
+        <a href="https://www.facebook.com/brandon.zega"><img src="img/facebook_img.png" class="social-img" alt="Facebook"></a>
+        <a href="https://twitter.com/BZega"><img src="img/twitter_img.png" class="social-img" alt="Twitter"></a>
+        <a href="https://www.twitch.tv/bzega"><img src="img/twitch_img.png" class="social-img" alt="Twitch"></a>
+        </div>
     </footer>
 </body>
 </html>

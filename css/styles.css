@@ -1,7 +1,17 @@
+/***********
+Main Styles
+***********/
 body {
     background-image: url("Parchment_paper.jpg");
     background-color: white;
     font-family: "lora-regular", serif;
+}
+
+section {
+    text-align: center;
+    padding: 30px 15px;
+    margin: 15px 50px;
+    border: 1px solid black;
 }
 
 h1, h3 {
@@ -12,19 +22,28 @@ h1, h3 {
     text-align: center;
 }
 
+p {
+    color: #0B0C10;
+    padding: 0px 15px;
+    text-align: center; 
+}
+
+footer {
+    background-color: #0B0C10;
+    width: auto;
+    padding: 15px;
+}
+
+footer p {
+    color: #66fcf1;
+}
+
 .title {
     color: #1f2833;
     width: 100%;
     padding: 0px 15px;
     font-family: "poppins-semibold", sans-serif;
     text-align: center;
-}
-
-section {
-    text-align: center;
-    padding: 30px 15px;
-    margin: 15px 50px;
-    border: 1px solid black;
 }
 
 .info {
@@ -40,18 +59,21 @@ section {
     text-align: center;
 }
 
-p {
-    color: #0B0C10;
-    padding: 0px 15px;
-    text-align: center; 
-}
-
-img {
+.pic {
     width: 150px;
     padding: 15px;
 }
 
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.social-img {
+    width: 55px;
+    height: 45px;
+}
 
 img[alt~="Facebook"],
 img[alt~="Twitter"],
@@ -70,6 +92,7 @@ Navigation
     top: 0px;
 }
 
+/* navbar links */
 .navbar a {
     color: #66fcf1;
     padding: 14px 16px;
@@ -78,6 +101,7 @@ Navigation
     display: block;
 }
 
+/* hamburger square */
 .navbar a.hamburger {
     background: #0B0C10;
     display: block;
@@ -112,7 +136,6 @@ Contact Us Form
 form {
     margin: 10px auto;
     padding: 10px 20px;
-    /*background: white;*/
     border-radius: 8px;
 }
   
@@ -145,11 +168,11 @@ textarea {
     margin-bottom: 30px;
 }
 
+/* Autofill coloring */
 input[type="text"]:-webkit-autofill,
 input[type="email"]:-webkit-autofill,
 textarea:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
-    /* box-shadow: 0 0 0px 1000px #1f2833; */
     -webkit-text-fill-color: #c5c6c7;
 }
 
@@ -179,7 +202,6 @@ label {
     margin-bottom: 8px;
     color: #0B0C10;
 }
-
 
 #contact {
     margin: 15px 0px;
@@ -211,9 +233,14 @@ Media Queries
     .navbar a.hamburger {
         display: none;
     }
+
+    .pic {
+        width: 250px;
+        padding: 15px;
+    }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 813px) {
     .aboutsec {
         display: flex;
         flex-direction: row;
@@ -225,10 +252,18 @@ Media Queries
     .info, .title, .description, .content {
         text-align: left;
     }
+
+    #contact {
+        margin: 15px 50px;
+    }
 }
 
-@media only screen and (min-width: 1021px) {
+@media only screen and (min-width: 1188px) {
     section {
+        margin: 15px 20vw;
+    }
+
+    #contact {
         margin: 15px 20vw;
     }
 }
